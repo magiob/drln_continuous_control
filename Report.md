@@ -45,7 +45,7 @@ Actor(
   (fc2): Linear(in_features=256, out_features=256, bias=True)
   (bn2): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
   (fc3): Linear(in_features=256, out_features=4, bias=True)
-)<br />
+)
 ```
 
 The critic network consists of 2 linear layers with relu activation function and batch normalization layers in between followed by a final linear layer and output the Q value. Input size is 1D array of size equal to state_size, here 33. The neural network has the following architecture on pytorch:<<br />
@@ -56,7 +56,7 @@ Critic(
   (fc2): Linear(in_features=132, out_features=256, bias=True)
   (bn2): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
   (fc3): Linear(in_features=256, out_features=1, bias=True)
-)<br />
+)
 ```
 
 ## Plot of Rewards
