@@ -70,3 +70,4 @@ Average reward of 30.08 over 100 epochs is achieved at approximately 271 episode
 - Prioritized replay (selecting important experiences more frequently than others based on probabilities) should help learn the environment more efficiently. (https://arxiv.org/abs/1511.05952)
 - Normalizing states and rewards could also improve learning.
 - Modified algorithms such as Twin Delayed DDPG (TD3) could counter the fact that the learned Q-function begins to dramatically overestimate Q-values, which then leads to the policy breaking, because it exploits the errors in the Q-function. The tricks being used are Clipped Double-Q Learning, Delayed” Policy Updates and Target Policy Smoothing. (https://arxiv.org/pdf/1802.09477.pdf)
+- Probably there was no need for such a high warm up and same performance could be achieved sooner.
