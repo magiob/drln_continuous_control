@@ -5,8 +5,8 @@ Continuous Control project #2 for UDACITY course Deep Reinforcement Learning
 ## Learning Algorithm
 A DDPG (Deep Deterministic Policy Gradient) agent is trained (agent.py) with experience replay memory of size 1e+5, where experience tuples of ("state", "action", "reward", "next_state", "done") are added. 
 
-A local and target network is initialized for the actor and critic separately.  The critic Q(s, a) is learned using the Bellman equation as in Q-learning and MSE. The actor is updated by following the applying the chain rule to the expected return from the start distribution J with respect to the actor parameters:
-<img src="J.png" width="80%">
+A local and target network is initialized for the actor and critic separately.  The critic Q(s, a) is learned using the Bellman equation as in Q-learning and MSE. The actor is updated by following the applying the chain rule to the expected return from the start distribution J with respect to the actor parameters:<br />
+<img src="J.png" width="80%"><br />
 Source: [CONTINUOUS CONTROL WITH DEEP REINFORCEMENT LEARNING, 2016](https://arxiv.org/pdf/1509.02971.pdf)
 
 
@@ -20,8 +20,8 @@ The action values are clipped between -1 and 1.
 
 During training, random minibatch of 512 experience tuples are sampled from replay memory (uniformly). 
 
-The algorithm of DDPG is the following:
-<img src="ddpg_algo.png" width="65%">
+The algorithm of DDPG is the following:<br />
+<img src="ddpg_algo.png" width="65%"><br />
 Source: [CONTINUOUS CONTROL WITH DEEP REINFORCEMENT LEARNING, 2016](https://arxiv.org/pdf/1509.02971.pdf)
 
 Soft update is performed to the model parameters from local to target networks of the critic and actor: <br />
